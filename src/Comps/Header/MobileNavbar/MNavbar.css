@@ -1,0 +1,34 @@
+.mobile-nav-container {
+    display: flex;
+    flex-direction: column;
+    transition: transform 120ms ease-out;
+    position: absolute;
+    border: 1px solid red;
+    top: 5rem;
+    left: 7%;
+    right: 7%;
+    transform: translateX(150%);
+    padding: 1rem;
+}
+
+
+.mobile-nav-container-active {
+    transform: translateX(0%);
+}
+
+.mobile-nav-link {
+    margin: 0.500rem 0;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 1000px) {
+    .mobile-nav-container {
+        display: none;
+    }
+
+    .nav-icons-container {
+        display: none;
+    }
+}

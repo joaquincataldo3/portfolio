@@ -1,8 +1,11 @@
 
-import Home from "./Comps/Home/Home";
-import { BrowserRouter, Route, Routes, Outlet } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Comps/Home/Home'
 import SharedLayout from "./Comps/SharedLayout/SharedLayout";
+import AboutMe from './Comps/AboutMe/AboutMe'
+import Projects from './Comps/Projects/Projects'
+import Skills from './Comps/Skills/Skills'
+import Contact from "./Comps/Contact/Contact";
 import Error404 from './Comps/err404/err404'
 
 function App() {
@@ -14,6 +17,14 @@ function App() {
         <Route path='/' element={<SharedLayout />}>
 
               <Route index element={<Home />}/>
+
+              <Route path="projects" element={<Projects />}/>
+              
+              <Route path="skills" element={<Skills />}/>
+
+              <Route path="about-me" element={<AboutMe />}/>
+
+              <Route path="contact" element={<Contact />}/>
 
               <Route path="*" element={<Error404 />}/>
 

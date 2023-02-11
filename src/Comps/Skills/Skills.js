@@ -2,9 +2,9 @@ import React from 'react'
 
 function Skills() {
   return (
-    <section>
+    <main>
       <h2>Skills component</h2>
-    </section>
+    </main>
   )
 }
 

@@ -1,0 +1,10 @@
+.desktop-navbar-container {
+    display: none;
+}
+
+
+@media (min-width: 1000px) {
+    .desktop-navbar-container {
+        display: flex;
+    }
+}

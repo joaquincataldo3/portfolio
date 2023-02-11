@@ -2,9 +2,9 @@ import React from 'react'
 
 function AboutMe() {
   return (
-    <section>
+    <main>
       
-    </section>
+    </main>
   )
 }
 
