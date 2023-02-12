@@ -1,19 +1,34 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 import './MNavbar.css'
 
 function MNavbar(props) {
 
-  const {isMobileNavbarOpen} = props;
+  const {isMobileNavbarOpen, setIsMobileNavbarOpen} = props;
 
   return (
-    <nav className={`mobile-nav-container ${isMobileNavbarOpen && 'mobile-nav-container-active'}`}>
-     
-      <NavLink to='/' className='mobile-nav-link'>Home</NavLink>
-      <NavLink to='/projects' className='mobile-nav-link'>Projects</NavLink>
-      <NavLink to='/about-me' className='mobile-nav-link'>About me</NavLink>
-      <NavLink to='/skills' className='mobile-nav-link'>Skills</NavLink>
-      <NavLink to='/contact' className='mobile-nav-link'>Contact</NavLink>
+    <nav className={`mobile-nav-submenu-container ${isMobileNavbarOpen && 'mobile-nav-submenu-container-active'}`}>
+
+
+      <NavLink to='/' 
+      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Home</NavLink>
+      
+      <NavLink to='/projects' 
+      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Projects</NavLink>
+      
+      <NavLink to='/about-me' 
+      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>About me</NavLink>
+      
+      <NavLink to='/skills' 
+      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Skills</NavLink>
+      
+      <NavLink to='/contact' 
+      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Contact</NavLink>
 
     </nav>
   )

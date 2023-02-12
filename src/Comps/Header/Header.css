@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
 .header-main-container {
     display: flex;
     align-items: center;
@@ -6,6 +13,7 @@
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
+    background-color: #20262E;
 }
 
 .logo-container {
@@ -20,7 +28,8 @@
 
 .bx-menu-alt-left, .bx-menu {
     font-size: 2rem;
-    color: black;
+    color: #e982ad;
 }
+
 
 

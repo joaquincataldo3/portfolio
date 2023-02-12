@@ -23,7 +23,7 @@ function Header() {
                 </div>
 
                 <DNavbar />
-                <MNavbar isMobileNavbarOpen={isMobileNavbarOpen} />
+                <MNavbar isMobileNavbarOpen={isMobileNavbarOpen} setIsMobileNavbarOpen={setIsMobileNavbarOpen}/>
             </div>
         </header>
     )
