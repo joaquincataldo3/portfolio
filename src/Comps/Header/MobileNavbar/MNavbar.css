@@ -40,7 +40,7 @@
 
 
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .mobile-nav-container {
         display: none;
     }

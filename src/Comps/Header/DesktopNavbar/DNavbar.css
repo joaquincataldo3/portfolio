@@ -3,8 +3,33 @@
 }
 
 
-@media (min-width: 1000px) {
+@media (min-width: 768px) {
     .desktop-navbar-container {
         display: flex;
     }
+
+    .desktop-nav-link {
+        margin: 0.500rem 0;
+        text-decoration: none;
+        color: #e982ad;
+        transition: color 150ms;
+        font-weight: 700;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
+
+    .desktop-nav-link:hover {
+        color: #F47658; 
+    }
+    
+    
+    .desktop-nav-link-active {
+        margin: 0.500rem 0;
+        text-decoration: none;
+        color: #F47658; 
+        font-weight: 700;
+        margin: 0 1rem;
+        font-size: 1.2rem;
+    }
+    
 }

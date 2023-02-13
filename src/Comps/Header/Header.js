@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 import DNavbar from './DesktopNavbar/DNavbar'
 import MNavbar from './MobileNavbar/MNavbar'
 import './Header.css'
-import logo from '../../images/logomaxpng.png'
+import logo from '../../images/whitejclogo.png'
 
 
 
@@ -16,14 +17,16 @@ function Header() {
         <header>
             <div className='header-main-container'>
                 <div className='logo-container'>
-                    <img src={logo} alt="" />
+                    <Link to='/'>
+                        <img src={logo} alt="" />
+                    </Link>
                 </div>
                 <div className='nav-icons-container'>
                     {isMobileNavbarOpen ? <i class='bx burger-icon bx-menu-alt-left' onClick={handleBurgerMenuClick}></i> : <i class='bx burger-icon bx-menu' onClick={handleBurgerMenuClick}></i>}
                 </div>
 
                 <DNavbar />
-                <MNavbar isMobileNavbarOpen={isMobileNavbarOpen} setIsMobileNavbarOpen={setIsMobileNavbarOpen}/>
+                <MNavbar isMobileNavbarOpen={isMobileNavbarOpen} setIsMobileNavbarOpen={setIsMobileNavbarOpen} />
             </div>
         </header>
     )

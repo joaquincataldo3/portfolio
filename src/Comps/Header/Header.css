@@ -9,11 +9,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 150px;
     margin: 0 auto;
     padding: 0 2rem;
     position: relative;
     background-color: #20262E;
+    max-width: 1100px;
 }
 
 .logo-container {
