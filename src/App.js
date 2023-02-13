@@ -2,7 +2,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from './Comps/Home/Home'
 import SharedLayout from "./Comps/SharedLayout/SharedLayout";
-import AboutMe from './Comps/AboutMe/AboutMe'
 import Projects from './Comps/Projects/Projects'
 import Skills from './Comps/Skills/Skills'
 import Contact from "./Comps/Contact/Contact";
@@ -21,8 +20,6 @@ function App() {
               <Route path="projects" element={<Projects />}/>
               
               <Route path="skills" element={<Skills />}/>
-
-              <Route path="about-me" element={<AboutMe />}/>
 
               <Route path="contact" element={<Contact />}/>
 

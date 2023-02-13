@@ -12,23 +12,31 @@ function MNavbar(props) {
 
       <NavLink to='/' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
-      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Home</NavLink>
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
+        <i class='bx bx-home-alt-2'></i>
+        <span>Home</span>
+      </NavLink>
       
       <NavLink to='/projects' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
-      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Projects</NavLink>
-      
-      <NavLink to='/about-me' 
-      className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
-      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>About me</NavLink>
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
+        <i class='bx bxs-folder'></i>
+        <span>Projects</span>
+      </NavLink>
       
       <NavLink to='/skills' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
-      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Skills</NavLink>
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
+        <i class='bx bx-wrench'></i>
+        <span>Skills</span>
+      </NavLink>
       
       <NavLink to='/contact' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
-      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>Contact</NavLink>
+      onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
+        <i class='bx bxs-user'></i>
+        <span>Contact</span>
+      </NavLink>
 
     </nav>
   )

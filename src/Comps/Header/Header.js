@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import { Link } from 'react-router-dom'
 import DNavbar from './DesktopNavbar/DNavbar'
 import MNavbar from './MobileNavbar/MNavbar'
@@ -13,11 +13,12 @@ function Header() {
 
     const handleBurgerMenuClick = () => setIsMobileNavbarOpen(!isMobileNavbarOpen)
 
+
     return (
         <header>
             <div className='header-main-container'>
                 <div className='logo-container'>
-                    <Link to='/'>
+                    <Link to='/' >
                         <img src={logo} alt="" />
                     </Link>
                 </div>

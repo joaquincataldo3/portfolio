@@ -3,7 +3,7 @@
     flex-direction: column;
     transition: transform 150ms ease-out;
     position: absolute;
-    top: 5rem;
+    top: 6rem;
     left: 7%;
     right: 7%;
     transform: translateX(150%);
@@ -20,11 +20,13 @@
 }
 
 .mobile-nav-link {
-    margin: 0.500rem 0;
+    margin: 0.650rem 0;
     text-decoration: none;
     color: #e982ad;
     transition: color 150ms;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .mobile-nav-link:visited {
@@ -32,10 +34,22 @@
 }
 
 .mobile-nav-link-active {
-    margin: 0.500rem 0;
+    margin: 0.650rem 0;
     text-decoration: none;
     color: #F47658; 
     font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.mobile-nav-link i {
+    margin-bottom: 0.100rem;
+    margin-right: 0.400rem;
+}
+
+.mobile-nav-link-active i {
+    margin-bottom: 0.100rem;
+    margin-right: 0.400rem;
 }
 
 

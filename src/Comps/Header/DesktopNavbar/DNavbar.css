@@ -18,11 +18,6 @@
         font-size: 1.2rem;
     }
 
-    .desktop-nav-link:hover {
-        color: #F47658; 
-    }
-    
-    
     .desktop-nav-link-active {
         margin: 0.500rem 0;
         text-decoration: none;
@@ -30,6 +25,20 @@
         font-weight: 700;
         margin: 0 1rem;
         font-size: 1.2rem;
+    }
+
+    .desktop-nav-link:hover {
+        color: #F47658; 
+    }
+
+    .desktop-nav-link i {
+        margin-top: 0.200rem;
+        margin-right: 0.300rem;
+    }
+
+    .desktop-nav-link-active i {
+        margin-top: 0.200rem;
+        margin-right: 0.300rem;
     }
     
 }
