@@ -4,8 +4,8 @@
     transition: transform 150ms ease-out;
     position: absolute;
     top: 6rem;
-    left: 7%;
-    right: 7%;
+    left: 4%;
+    right: 4%;
     transform: translateX(150%);
     padding: 1rem;
     z-index: 99;
