@@ -1,27 +1,129 @@
-
 .projects-main {
-    padding: 0 2.5rem;   
+    padding: 0 2.5rem;
 }
 
 .projects-intro-title {
     font-size: 1.5rem;
-    color: #e982ad
+    color: #e982ad;
+    margin-left: 0.800rem;
 }
 
 .project-container {
-    width: 90%;
-    margin: 0 auto;
+    width: 95%;
+    margin: 1.5rem auto;
+    border: 2px solid #F47658;
+    border-radius: 10px;
+
 }
 
 .project-img img {
     height: 100%;
     width: 100%;
     object-fit: contain;
+    border-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
+.project-info {
+    padding: 1rem;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    color: #E9E8E8
+}
+
+.project-description {
+    font-size: 0.875rem;
+    color: #E9E8E8;
+}
+
+.mysql-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.skills-used {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.skills-used * {
+    margin-right: 0.700rem;
+}
+
+.bxl-javascript,
+.bxl-css3 {
+    font-size: 1.5rem;
+    color: #E9E8E8;
+}
+
+.project-links-container {
+    padding-left: 1rem;
+    margin-top: 1.2rem;
+}
+
+.project-link-btn {
+    border: 0;
+    background-color: #e982ad;
+    color: #E9E8E8;
+    padding: 0.200rem 1rem;
+    border-radius: 5px;
+}
+
+.project-link-btn a:visited {
+    color: #E9E8E8;
+}
+
+.project-link-btn:first-child {
+    margin-right: 1rem;
+}
+
+
 @media(min-width: 768px) {
+    
     .projects-main {
         margin: 0 auto;
         max-width: 1000px;
     }
+
+    .projects-intro-title {
+        margin-left: 1.5rem;
+    }
+
+    .projects-wrapper {
+        margin-left: 1.5rem;
+    }
+
+    .project-container {
+        display: flex;
+        max-width: 870px;
+        margin: 2rem 0;
+    }
+
+    .project-img img {
+        object-fit: fill;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .project-info {
+        width: 90%;
+    }
+
+    .project-title, .project-description {
+        margin: 0.300rem 0;
+    }
+
+    .skills-used {
+        padding-left: 0;
+    }
+
+    .project-links-container {
+        padding-left: 0;
+    }
+    
+
 }

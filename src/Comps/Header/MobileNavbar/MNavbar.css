@@ -22,7 +22,7 @@
 .mobile-nav-link {
     margin: 0.650rem 0;
     text-decoration: none;
-    color: #e982ad;
+    color: #E9E8E8;
     transition: color 150ms;
     font-weight: 700;
     display: flex;
@@ -30,13 +30,13 @@
 }
 
 .mobile-nav-link:visited {
-    color: #e982ad
+    color: #E9E8E8
 }
 
 .mobile-nav-link-active {
     margin: 0.650rem 0;
     text-decoration: none;
-    color: #F47658; 
+    color: #e982ad;
     font-weight: 700;
     display: flex;
     align-items: center;
