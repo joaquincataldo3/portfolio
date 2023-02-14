@@ -1,0 +1,27 @@
+
+.projects-main {
+    padding: 0 2.5rem;   
+}
+
+.projects-intro-title {
+    font-size: 1.5rem;
+    color: #e982ad
+}
+
+.project-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.project-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+@media(min-width: 768px) {
+    .projects-main {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}

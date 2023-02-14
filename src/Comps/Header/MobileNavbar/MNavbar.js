@@ -20,7 +20,7 @@ function MNavbar(props) {
       <NavLink to='/projects' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
       onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
-        <i class='bx bxs-folder'></i>
+        <i class='bx bx-folder' ></i>
         <span>Projects</span>
       </NavLink>
       
@@ -34,7 +34,7 @@ function MNavbar(props) {
       <NavLink to='/contact' 
       className={({isActive}) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
       onClick={() => setIsMobileNavbarOpen(!isMobileNavbarOpen)}>
-        <i class='bx bxs-user'></i>
+       <i class='bx bx-user'></i>
         <span>Contact</span>
       </NavLink>
 

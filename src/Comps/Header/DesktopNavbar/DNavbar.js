@@ -14,7 +14,7 @@ function DNavbar() {
         <span>Home</span>
       </NavLink>
       <NavLink to='/projects' className={({ isActive }) => isActive ? 'desktop-nav-link-active' : 'desktop-nav-link'}>
-        <i class='bx bxs-folder'></i>
+        <i class='bx bx-folder' ></i>
         <span>Projects</span>
       </NavLink>
       <NavLink to='/skills' className={({ isActive }) => isActive ? 'desktop-nav-link-active' : 'desktop-nav-link'}>
@@ -22,7 +22,7 @@ function DNavbar() {
         <span>Skills</span>
       </NavLink>
       <NavLink to='/contact' className={({ isActive }) => isActive ? 'desktop-nav-link-active' : 'desktop-nav-link'}>
-        <i class='bx bxs-user'></i>
+        <i class='bx bx-user'></i>
         <span>Contact</span>
       </NavLink>
 
