@@ -4,7 +4,13 @@ body {
 
 
 .home-main {
+    opacity: 0;
+    transition: opacity 350ms;
+}
+
+.home-main-active {
     padding: 0 2.5rem;
+    opacity: 1;
 }
 
 

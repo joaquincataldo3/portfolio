@@ -1,15 +1,19 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState} from 'react'
 import './Projects.css'
 import mySqlLogo from '../../images/mysqllogo.png'
 import quilmacProjectImg from '../../images/quilmacprojectimg.jpg'
 import gotProjectImg from '../../images/gotprojectimg.jpg'
 import moviesApiImg from '../../images/moviesapi.jpg'
 import { Link } from 'react-router-dom'
-import { useGlobalContext } from '../../context'
 
 function Projects() {
 
-  const {renderComp, handleRenderComp} = useGlobalContext()
+
+  const [renderComp, setRenderComp] = useState(false)
+
+  const handleRenderComp = () => {
+    setRenderComp(true)
+  }
 
   useEffect(() => {
     handleRenderComp()

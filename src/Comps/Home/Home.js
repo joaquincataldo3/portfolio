@@ -1,12 +1,23 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link } from 'react-router-dom'
 import './Home.css'
 
 
 
 function Home() {
+
+  const [renderComp, setRenderComp] = useState(false)
+
+  const handleRenderComp = () => {
+    setRenderComp(true)
+  }
+
+  useEffect(() => {
+    handleRenderComp()
+  }, [])
+
   return (
-    <main className='home-main'>
+    <main className={`home-main ${renderComp && 'home-main-active'}`}>
       <div className='home-animations-container'>
         <div className="home-line-animated-container">
           <div id='line-1'></div>
