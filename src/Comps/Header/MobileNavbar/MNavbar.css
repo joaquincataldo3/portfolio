@@ -1,7 +1,5 @@
 .mobile-nav-submenu-container {
-    display: flex;
     flex-direction: column;
-    transition: transform 150ms ease-out;
     position: absolute;
     top: 6rem;
     left: 4%;
@@ -12,6 +10,7 @@
     background-color: #20262E;
     border-radius: 10px;
     border: 2px solid #F47658;
+    transition: all 150ms ease-in-out;
 }
 
 

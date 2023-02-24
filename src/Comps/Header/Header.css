@@ -18,6 +18,12 @@ a {
     padding: 0 2rem;
     position: relative;
     background-color: #20262E;
+    overflow: hidden;
+}
+
+.header-active {
+    overflow: visible;
+
 }
 
 .logo-container {

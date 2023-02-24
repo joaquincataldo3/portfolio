@@ -16,7 +16,7 @@ function Header() {
 
     return (
         <header>
-            <div className='header-main-container'>
+            <div className={`header-main-container ${isMobileNavbarOpen && 'header-active'}`}>
                 <div className='logo-container'>
                     <Link to='/' >
                         <img src={logo} alt="" />

@@ -1,5 +1,11 @@
 .projects-main {
     padding: 0 2.5rem;
+   opacity: 0;
+    transition: opacity 350ms;
+}
+
+.projects-main-active {
+    opacity: 1;
 }
 
 .projects-intro-title {
@@ -47,21 +53,23 @@
 .skills-used {
     display: flex;
     align-items: center;
-    padding-left: 1rem;
 }
 
 .skills-used * {
+    margin-top: 1rem;
     margin-right: 0.700rem;
 }
 
 .bxl-javascript,
-.bxl-css3 {
+.bxl-css3, 
+.bxl-react,
+.bxl-mongodb 
+{
     font-size: 1.5rem;
     color: #E9E8E8;
 }
 
 .project-links-container {
-    padding-left: 1rem;
     margin-top: 1.2rem;
 }
 
@@ -117,13 +125,6 @@
         margin: 0.300rem 0;
     }
 
-    .skills-used {
-        padding-left: 0;
-    }
-
-    .project-links-container {
-        padding-left: 0;
-    }
     
 
 }
