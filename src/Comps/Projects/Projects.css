@@ -1,5 +1,5 @@
 .projects-main {
-    padding: 0 2.5rem;
+    padding: 2.5rem;
    opacity: 0;
     transition: opacity 350ms;
 }
@@ -86,8 +86,17 @@
 }
 
 .project-link-btn:first-child {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
 }
+
+.other-projects-container .project-title {
+    margin-bottom: 1rem;
+}
+
+#other-projects-first-btn {
+    margin-right: 1.5rem;
+}
+
 
 
 @media(min-width: 768px) {
@@ -124,6 +133,15 @@
     .project-title, .project-description {
         margin: 0.300rem 0;
     }
+
+    .project-link-btn {
+        transition: transform 250ms;
+    }
+
+    .project-link-btn:hover {
+        transform: translateY(-5px);
+    }
+    
 
     
 

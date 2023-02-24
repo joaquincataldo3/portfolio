@@ -1,0 +1,29 @@
+.skills-main {
+    padding: 2.5rem;
+    opacity: 0;
+    transition: opacity 350ms;
+}
+
+.skills-main-active {
+    opacity: 1;
+}
+
+.skills-intro-title {
+    font-size: 1.5rem;
+    color: #e982ad;
+    margin-left: 0.800rem;
+}
+
+.skills-stack-title {
+    color: #E9E8E8;
+    font-size: 1.2rem;
+    margin-left: 1.2rem;
+}
+
+@media(min-width: 768px) {
+    
+    .skills-main {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+}

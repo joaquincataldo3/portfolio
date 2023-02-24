@@ -6,10 +6,11 @@ body {
 .home-main {
     opacity: 0;
     transition: opacity 350ms;
+    padding: 2.5rem;
 }
 
 .home-main-active {
-    padding: 0 2.5rem;
+    
     opacity: 1;
 }
 
@@ -127,6 +128,14 @@ body {
     .home-pers-info p {
         font-size: 1rem;
         color: #E9E8E8;
+    }
+
+    .bxl-github, .bxl-linkedin {
+        transition: transform 250ms;
+    }
+
+    .bxl-github:hover, .bxl-linkedin:hover {
+        transform: translateY(-5px);
     }
     
 }
