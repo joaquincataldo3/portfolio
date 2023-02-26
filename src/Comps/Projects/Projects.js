@@ -1,4 +1,4 @@
-import React, { useEffect} from 'react'
+import React, { useEffect } from 'react'
 import mySqlLogo from '../../images/mysqllogo.png'
 import quilmacProjectImg from '../../images/quilmacprojectimg.jpg'
 import gotProjectImg from '../../images/gotprojectimg.jpg'
@@ -10,7 +10,7 @@ import './Projects.css'
 
 function Projects() {
 
-  const { renderComp, handleRenderComp} = useGlobalContext()
+  const { renderComp, handleRenderComp } = useGlobalContext()
 
   useEffect(() => {
     handleRenderComp()
@@ -108,9 +108,12 @@ function Projects() {
         </div>
 
         <div className='other-projects-container'>
-            <h3 className='project-title'>Other react basic projects</h3>
+          <h3 className='project-title'>Other react basic projects</h3>
+          <div className='other-projects-link-btn-container'>
             <button className='project-link-btn' id='other-projects-first-btn'><Link to='https://react-basic-projects-lime.vercel.app/' target='_blank'>DEPLOY</Link></button>
             <button className='project-link-btn'><Link to='https://github.com/joaquincataldo3/react-basic-projects' target='_blank'>GITHUB</Link></button>
+          </div>
+
         </div>
 
 
