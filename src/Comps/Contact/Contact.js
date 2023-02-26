@@ -7,15 +7,11 @@ import './Contact.css'
 
 function Contact() {
 
-  const [contactBody, setContactBody] = useState({
-    name: '',
-    email: '',
-    message: ''
-  })
+
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [message, setMessage] = useState('')
-  const [isFormSubmitted, setIsFormSubmited] = useState(true)
+  const [isFormSubmitted, setIsFormSubmited] = useState(false)
   const nameInput = useRef(null)
   const emailInput = useRef(null)
   const messageInput = useRef(null)
