@@ -23,13 +23,12 @@ function Projects() {
       <div className='projects-wrapper'>
         <div className='project-container'>
           <div className='project-img'>
-            <img src={quilmacProjectImg} alt="Quilmac e-commerce" />
+            <img src={quilmacProjectImg} alt="Quilmac e-commerce" id='quilmac-img'/>
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Quilmac e-commerce</h3>
             <p className='project-description'>Freelance project for a client. Pure CSS/Javascript for the front
-              and for the back I used Javascript as well, with its dynamic features combined
-              with Sequelize and MySQL to create a CRUD for products and users with its respective validations/relations. Still working on an admin panel.
+              and MySQL with Sequelize and Javascript to create a CRUD of products and users with its respective validations/relations. Still working on an features/pages.
             </p>
 
             <div className='skills-used'>

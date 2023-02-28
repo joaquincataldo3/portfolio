@@ -31,6 +31,7 @@
     border-bottom-right-radius: 0;
 }
 
+
 .project-info {
     padding: 1rem;
 }
@@ -80,9 +81,10 @@
     border-radius: 5px;
 }
 
-.project-link-btn a:visited {
-    color: #E9E8E8;
+.project-link-btn a {
+    color: #E9E8E8!important;
 }
+
 
 .project-link-btn:first-child {
     margin-right: 1.5rem;
@@ -134,6 +136,11 @@
         border-bottom-left-radius: 10px;
         border-top-right-radius: 0;
     }
+
+    
+#quilmac-img {
+    width: 263.17px;
+}
 
     .project-info {
         width: 90%;
