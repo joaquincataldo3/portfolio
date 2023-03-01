@@ -9,6 +9,7 @@ import gitLogo from '../../images/git-logo.svg'
 import trelloLogo from '../../images/trello-icon.svg'
 import nodeJS from '../../images/nodejs-logo.svg'
 import photoshopLogo from '../../images/photoshop-logo.svg'
+import postmanLogo from '../../images/postmanlogo.svg'
 
 function Skills() {
 
@@ -79,6 +80,10 @@ function Skills() {
     {
       name: 'Photoshop',
       logo: photoshopLogo
+    },
+    {
+      name: 'Postman',
+      logo: postmanLogo
     },
   ]
 
