@@ -46,7 +46,7 @@ function Home() {
             <Link to='https://www.linkedin.com/in/joaqu%C3%ADncataldo/' target="_blank" className='home-links-container'>
               <i class='bx bxl-linkedin' ></i>
             </Link>
-            <Link to='https://pdfhost.io/v/xnfcyiBaV_CATALDO_JOAQUIN_T' target="_blank" className='home-links-container'>
+            <Link to='https://pdfhost.io/v/abu~8fLTz_JOAQUIN_CATALDO' target="_blank" className='home-links-container'>
             <i class='bx bx-file'></i>
             </Link>
 

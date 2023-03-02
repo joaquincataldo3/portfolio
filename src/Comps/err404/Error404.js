@@ -14,7 +14,6 @@ function Error404() {
   return (
     <main className={`error404-main ${renderComp && 'error404-main-active'}`}>
       <div className='error-info-container'>
-        
         <h1 className='error-title'>Sorry</h1>
         <h2 className='error-subtitle'>We couldn't find the page you were looking for</h2>
         <div className='icon-container'>
