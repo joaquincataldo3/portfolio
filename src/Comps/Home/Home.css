@@ -93,12 +93,12 @@ body {
 }
 
 
-.bxl-github, .bxl-linkedin{
+.bxl-github, .bxl-linkedin, .bx-file{
     color: #E9E8E8;
     font-size: 1.8rem;
 }
 
-.bxl-github {
+.bxl-github, .bxl-linkedin {
     margin-right: 1rem;
 }
 
@@ -130,7 +130,7 @@ body {
         color: #E9E8E8;
     }
 
-    .bxl-github, .bxl-linkedin {
+    .bxl-github, .bxl-linkedin, .bx-file {
         transition: transform 250ms;
     }
 

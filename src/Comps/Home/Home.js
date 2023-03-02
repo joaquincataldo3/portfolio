@@ -46,6 +46,10 @@ function Home() {
             <Link to='https://www.linkedin.com/in/joaqu%C3%ADncataldo/' target="_blank" className='home-links-container'>
               <i class='bx bxl-linkedin' ></i>
             </Link>
+            <Link to='https://pdfhost.io/v/xnfcyiBaV_CATALDO_JOAQUIN_T' target="_blank" className='home-links-container'>
+            <i class='bx bx-file'></i>
+            </Link>
+
           </div>
         </div>
       </main>
