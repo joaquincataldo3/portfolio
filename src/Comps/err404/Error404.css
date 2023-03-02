@@ -1,0 +1,68 @@
+.error404-main {
+    opacity: 0;
+    transition: opacity 350ms;
+    padding: 2.5rem;
+}
+
+.error-info-container {
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.bx-search-alt {
+    font-size: 6rem;
+    color: #E9E8E8
+}
+
+.error-info-container * {
+    margin: 0.500rem 0;
+}
+
+.error404-main-active {
+    opacity: 1;
+}
+
+.error-title {
+    font-size: 1.5rem;
+    color: #e982ad;
+}
+
+.error-subtitle {
+    font-size: 1.2rem;
+    color: #E9E8E8;
+}
+
+.back-home-a {
+    color: #F47658;
+}
+
+@media(min-width: 768px) {
+    .error404-main {
+        margin: 0 auto;
+        max-width: 1000px;
+    }
+
+    .error-info-container {
+        width: 85%;
+    }
+
+}
+
+@media(min-width: 1000px) {
+    .error-title {
+        font-size: 1.7rem;
+        
+    }
+
+    .error-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .error-info-container {
+        width: 75%;
+    }
+}
+
+
+

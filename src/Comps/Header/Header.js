@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import DNavbar from './DesktopNavbar/DNavbar'
 import MNavbar from './MobileNavbar/MNavbar'
 import './Header.css'
-import logo from '../../images/whitejclogo.png'
+import logo from '../../assets/images/whitejclogo.png'
 
 
 
