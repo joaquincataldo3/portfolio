@@ -5,7 +5,7 @@ import SharedLayout from "./Comps/SharedLayout/SharedLayout";
 import Projects from './Comps/Projects/Projects'
 import Skills from './Comps/Skills/Skills'
 import Contact from "./Comps/Contact/Contact";
-import Error404 from './Comps/err404/err404'
+import Error404 from './Comps/err404/Error404'
 
 function App() {
   return (
