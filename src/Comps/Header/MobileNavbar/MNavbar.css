@@ -4,7 +4,7 @@
     top: 6rem;
     left: 4%;
     right: 4%;
-    transform: translateX(150%);
+    transform: translateX(120%);
     padding: 1rem;
     z-index: 99;
     background-color: #20262E;
@@ -15,7 +15,7 @@
 
 
 .mobile-nav-submenu-container-active {
-    transform: translateX(0%);
+    transform: translateX(0);
 }
 
 .mobile-nav-link {
