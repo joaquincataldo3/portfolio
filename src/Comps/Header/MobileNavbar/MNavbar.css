@@ -58,6 +58,10 @@
         display: none;
     }
 
+    .mobile-nav-submenu-container {
+        display: none;
+    }
+
     .nav-icons-container {
         display: none;
     }
