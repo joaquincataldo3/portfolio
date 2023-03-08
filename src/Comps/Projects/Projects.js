@@ -23,7 +23,7 @@ function Projects() {
       <div className='projects-wrapper'>
         <div className='project-container'>
           <div className='project-img'>
-            <img src={quilmacProjectImg} alt="Quilmac e-commerce" id='quilmac-img'/>
+            <img src={quilmacProjectImg} alt="Quilmac e-commerce" id='quilmac-img' />
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Quilmac e-commerce</h3>
@@ -38,8 +38,8 @@ function Projects() {
               <iconify-icon icon="file-icons:sequelize" style={{ color: "#E9E8E8", fontSize: '1.5rem' }}></iconify-icon>
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_blank'to='https://quilmac-website-production.up.railway.app/'>DEPLOY</Link></button>
-              <button className='project-link-btn'><Link target='_blank'to='https://github.com/joaquincataldo3/quilmac-website'>GITHUB</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://quilmac-website-production.up.railway.app/'>DEPLOY</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/quilmac-website'>GITHUB</Link></button>
             </div>
           </div>
         </div>
@@ -55,11 +55,12 @@ function Projects() {
             </p>
 
             <div className='skills-used'>
-              <i class='bx bxl-mongodb' ></i>
+              <i class='bx bxl-react'></i>
+
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_blank'to='https://react-todolist-theta.vercel.app/'>DEPLOY</Link></button>
-              <button className='project-link-btn'><Link target='_blank'to='https://github.com/joaquincataldo3/react-todolist'>GITHUB</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://react-todolist-theta.vercel.app/'>DEPLOY</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/react-todolist'>GITHUB</Link></button>
             </div>
           </div>
         </div>
@@ -77,11 +78,11 @@ function Projects() {
             </p>
 
             <div className='skills-used'>
-              <i class='bx bxl-react'></i>
+              <i class='bx bxl-mongodb' ></i>
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_black'to='https://brave-goat-pinafore.cyclic.app/'>DEPLOY</Link></button>
-              <button className='project-link-btn'><Link target='_black'to='https://github.com/joaquincataldo3/mongo-movies-api'>GITHUB</Link></button>
+              <button className='project-link-btn'><Link target='_black' to='https://brave-goat-pinafore.cyclic.app/'>DEPLOY</Link></button>
+              <button className='project-link-btn'><Link target='_black' to='https://github.com/joaquincataldo3/mongo-movies-api'>GITHUB</Link></button>
             </div>
           </div>
         </div>
@@ -100,8 +101,8 @@ function Projects() {
               <i class='bx bxl-react'></i>
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_blank'to='https://got-react-xi.vercel.app/'>DEPLOY</Link></button>
-              <button className='project-link-btn'><Link target='_blank'to='https://github.com/joaquincataldo3/got-react'>GITHUB</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://got-react-xi.vercel.app/'>DEPLOY</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/got-react'>GITHUB</Link></button>
             </div>
           </div>
         </div>
