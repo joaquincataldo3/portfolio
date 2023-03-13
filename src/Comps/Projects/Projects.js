@@ -4,6 +4,7 @@ import quilmacProjectImg from '../../assets/images/quilmacprojectimg.jpg'
 import gotProjectImg from '../../assets/images/gotprojectimg.jpg'
 import moviesApiImg from '../../assets/images/moviesapi.jpg'
 import todoListImg from '../../assets/images/todolist.jpg'
+import comingSoonImg from '../../assets/images/comingsoonj.jpg'
 import { useGlobalContext } from '../context'
 import { Link } from 'react-router-dom'
 import './Projects.css'
@@ -107,11 +108,31 @@ function Projects() {
           </div>
         </div>
 
+        <div className='project-container'>
+          <div className='project-img'>
+            <img src={comingSoonImg} alt="Coming soon project" id='coming-soon'/>
+          </div>
+          <div className='project-info'>
+            <h3 className='project-title'>Dictify</h3>
+            <p className='project-description'>
+              React + VITE dictionary project that consumes an API and the user is able to search word by word. In addition, it has the recently searched words.
+            </p>
+
+            <div className='skills-used'>
+              <i class='bx bxl-react'></i>
+            </div>
+            <div className='project-links-container'>
+              <button className='project-link-btn'><Link target='_blank' to='#'>DEPLOY -NOT AVAILABLE-</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/got-react'>GITHUB</Link></button>
+            </div>
+          </div>
+        </div>
+
         <div className='other-projects-container'>
           <h3 className='project-title'>Other react basic projects</h3>
           <div className='other-projects-link-btn-container'>
             <button className='project-link-btn' id='other-projects-first-btn'><Link to='https://react-basic-projects-lime.vercel.app/' target='_blank'>DEPLOY</Link></button>
-            <button className='project-link-btn'><Link to='https://github.com/joaquincataldo3/react-basic-projects' target='_blank'>GITHUB</Link></button>
+            <button className='project-link-btn'><Link to='https://github.com/joaquincataldo3/dictify' target='_blank'>GITHUB</Link></button>
           </div>
 
         </div>

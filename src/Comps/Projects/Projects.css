@@ -31,7 +31,6 @@
     border-bottom-right-radius: 0;
 }
 
-
 .project-info {
     padding: 1rem;
 }
@@ -137,8 +136,13 @@
         border-top-right-radius: 0;
     }
 
+
     
 #quilmac-img {
+    width: 263.17px;
+}
+
+#coming-soon {
     width: 263.17px;
 }
 
