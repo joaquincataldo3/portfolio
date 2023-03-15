@@ -24,6 +24,10 @@ function DNavbar() {
         <i class='bx bx-home-alt-2'></i>
         <span>Home</span>
       </NavLink>
+      <NavLink to='/professional-experience' className={({ isActive }) => isActive ? 'desktop-nav-link-active' : 'desktop-nav-link'} onClick={(e) => handleNavbarLinkClick(e)}>
+        <i class='bx bx-folder' ></i>
+        <span>Professional</span>
+      </NavLink>
       <NavLink to='/projects' className={({ isActive }) => isActive ? 'desktop-nav-link-active' : 'desktop-nav-link'} onClick={(e) => handleNavbarLinkClick(e)}>
         <i class='bx bx-folder' ></i>
         <span>Projects</span>

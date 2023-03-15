@@ -39,8 +39,8 @@ function MNavbar(props) {
       <NavLink to='/professional-experience'
         className={({ isActive }) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
         onClick={(e) => handleNavbarLinkClick(e)}>
-       <i className='bx bx-briefcase'></i>Name
-        <span>Professional Experience</span>
+       <i className='bx bx-briefcase'></i>
+        <span>Professional</span>
       </NavLink>
       
 
