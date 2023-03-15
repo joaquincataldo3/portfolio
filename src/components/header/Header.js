@@ -1,7 +1,7 @@
 import React, { useState} from 'react'
 import { Link } from 'react-router-dom'
-import DNavbar from './DesktopNavbar/DNavbar'
-import MNavbar from './MobileNavbar/MNavbar'
+import DNavbar from './desktop-navbar/DNavbar'
+import MNavbar from './mobile-navbar/MNavbar'
 import './Header.css'
 import logo from '../../assets/images/whitejclogo.png'
 

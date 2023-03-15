@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
-import ThankYou from './Comps/ThankYou'
-import { useGlobalContext } from '../context'
+import ThankYou from './components/ThankYou'
+import { useGlobalContext } from '../../hooks/context'
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 

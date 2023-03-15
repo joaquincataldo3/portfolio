@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { useGlobalContext } from '../context'
+import { useGlobalContext } from '../../hooks/context'
 import './Skills.css'
 import mySqlLogo from '../../assets/images/mysql.svg'
 import javascriptSvg from '../../assets/images/javascriptsvg.svg'

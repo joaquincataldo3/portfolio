@@ -5,7 +5,7 @@ import gotProjectImg from '../../assets/images/gotprojectimg.jpg'
 import moviesApiImg from '../../assets/images/moviesapi.jpg'
 import todoListImg from '../../assets/images/todolist.jpg'
 import comingSoonImg from '../../assets/images/comingsoonj.jpg'
-import { useGlobalContext } from '../context'
+import { useGlobalContext } from '../../hooks/context'
 import { Link } from 'react-router-dom'
 import './Projects.css'
 

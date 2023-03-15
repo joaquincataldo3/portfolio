@@ -1,11 +1,11 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from './Comps/Home/Home'
-import SharedLayout from "./Comps/SharedLayout/SharedLayout";
-import Projects from './Comps/Projects/Projects'
-import Skills from './Comps/Skills/Skills'
-import Contact from "./Comps/Contact/Contact";
-import Error404 from './Comps/err404/Error404'
+import SharedLayout from "./components/shared-layout/SharedLayout";
+import Home from './pages/home/Home'
+import Projects from './pages/projects/Projects'
+import Skills from './pages/skills/Skills'
+import Contact from "./pages/contact/Contact";
+import Error404 from './pages/err404/Error404'
 
 function App() {
   return (
@@ -18,6 +18,8 @@ function App() {
               <Route index element={<Home />}/>
 
               <Route path="projects" element={<Projects />}/>
+
+              <Route path="professional-experience" element={<Projects />}/>
               
               <Route path="skills" element={<Skills />}/>
 
