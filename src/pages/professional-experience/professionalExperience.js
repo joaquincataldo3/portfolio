@@ -49,7 +49,7 @@ function Projects() {
             <img src={comingSoonImg} alt="Alter ego e-commerce" id='coming-soon' />
           </div>
           <div className='project-info'>
-            <h3 className='project-title'>Alter ego</h3>
+            <h3 className='project-title'>Alter ego e-commerce</h3>
             <p className='project-description'>Currently co-developing/designing this freelance project for cloth brand. Pure CSS/Javascript for the front
               and MySQL with Sequelize and Javascript to create a CRUD of products and users with its respective validations/relations. Still working on an features/pages.
             </p>
