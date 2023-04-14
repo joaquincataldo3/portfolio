@@ -61,7 +61,7 @@ function Projects() {
               <iconify-icon icon="file-icons:sequelize" style={{ color: "#E9E8E8", fontSize: '1.5rem' }}></iconify-icon>
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_blank' to='#'>DEPLOY -NOT AVAILABLE-</Link></button>
+              <button className='project-link-btn'><Link target='_blank' to='https://determined-panama-hat-lamb.cyclic.app/'>DEPLOY</Link></button>
               <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/proyecto-cherly'>GITHUB</Link></button>
             </div>
           </div>
