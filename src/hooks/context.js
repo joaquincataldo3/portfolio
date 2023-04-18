@@ -1,36 +1,58 @@
-import React, {useContext, useState} from 'react'
+import React, { useContext, useState } from 'react'
+import argFlag from '../assets/images/argflag.png'
+import usaFlag from '../assets/images/usaflag.png'
 
 const AppContext = React.createContext()
 
-function AppProvider({children}) {
+const languages = [
+  {
+    name: 'EN',
+    flag: usaFlag
+  },
+  {
+    name: 'ES',
+    flag: argFlag
+  }
+]
 
-    const [renderComp, setRenderComp] = useState(false)
+function AppProvider({ children }) {
 
-    const handleRenderComp = () => {
-      setRenderComp(true)
-    }
+  const [renderComp, setRenderComp] = useState(false)
+  const [activeLanguage, setActiveLanguage] = useState(languages.english)
 
-    const handleUnmountComp = () => {
-        setRenderComp(false)
-    }
 
-    const providerValue = {
-        renderComp, 
-        handleRenderComp, 
-        handleUnmountComp, 
-        setRenderComp
-    }
+  const handleRenderComp = () => {
+    setRenderComp(true)
+  }
+
+  const handleUnmountComp = () => {
+    setRenderComp(false)
+  }
+
+  const toggleActiveLanguage = () => {
+    activeLanguage === languages.english ? setActiveLanguage(languages.spanish) : setActiveLanguage(languages.english)
+  }
+
+  const providerValue = {
+    renderComp,
+    handleRenderComp,
+    handleUnmountComp,
+    setRenderComp,
+    toggleActiveLanguage,
+    languages,
+    activeLanguage
+  }
 
   return (
     <AppContext.Provider value={providerValue}>
-       {children}
+      {children}
     </AppContext.Provider>
   )
 }
 
 
 const useGlobalContext = () => {
-    return useContext(AppContext)
+  return useContext(AppContext)
 }
 
-export {AppProvider, useGlobalContext}
+export { AppProvider, useGlobalContext }
