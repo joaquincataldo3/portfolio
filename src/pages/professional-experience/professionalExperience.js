@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import mySqlLogo from '../../assets/images/mysqllogo.png'
 import quilmacProjectImg from '../../assets/images/quilmacprojectimg.jpg'
-import comingSoonImg from '../../assets/images/comingsoonj.jpg'
+import alterEgoProjectImg from '../../assets/images/alteregoimg.jpg'
 import { useGlobalContext } from '../../hooks/context'
 import { Link } from 'react-router-dom'
 import '../projects/Projects.css'
@@ -46,7 +46,7 @@ function Projects() {
 
         <div className='project-container'>
           <div className='project-img'>
-            <img src={comingSoonImg} alt="Alter ego e-commerce" id='coming-soon' />
+            <img src={alterEgoProjectImg} alt="Alter ego e-commerce" id='coming-soon' />
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Alter ego e-commerce</h3>
@@ -61,7 +61,7 @@ function Projects() {
               <iconify-icon icon="file-icons:sequelize" style={{ color: "#E9E8E8", fontSize: '1.5rem' }}></iconify-icon>
             </div>
             <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_blank' to='https://determined-panama-hat-lamb.cyclic.app/'>DEPLOY</Link></button>
+              <button className='project-link-btn'><Link to='#'>DEPLOY -NOT AVAILABLE-</Link></button>
               <button className='project-link-btn'><Link target='_blank' to='https://github.com/joaquincataldo3/proyecto-cherly'>GITHUB</Link></button>
             </div>
           </div>
