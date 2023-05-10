@@ -27,7 +27,7 @@ function Projects() {
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Quilmac e-commerce</h3>
-            <p className='project-description'>Currently developing/designing project for a phone repair and seller startup. Pure CSS/Javascript for the front
+            <p className='project-description'>Currently developing/designing project for a phone repair and seller startup. EJS template based, and Pure CSS/Javascript for the front
               and MySQL with Sequelize and Javascript to create a CRUD of products and users with its respective validations/relations. Still working on an features/pages.
             </p>
 
@@ -50,7 +50,7 @@ function Projects() {
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Alter ego e-commerce</h3>
-            <p className='project-description'>Currently co-developing/designing this freelance project for cloth brand. Pure CSS/Javascript for the front
+            <p className='project-description'>Currently co-developing/designing this freelance project for cloth brand. EJS template based, and pure CSS/Javascript for the front
               and MySQL with Sequelize and Javascript to create a CRUD of products and users with its respective validations/relations. Still working on an features/pages.
             </p>
 
