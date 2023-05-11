@@ -107,15 +107,6 @@ function Projects() {
         </div>
     
 
-        <div className='other-projects-container'>
-          <h3 className='project-title'>Other react basic projects</h3>
-          <div className='other-projects-link-btn-container'>
-            <button className='project-link-btn' id='other-projects-first-btn'><Link to='https://react-basic-projects-lime.vercel.app/' target='_blank'>DEPLOY</Link></button>
-            <button className='project-link-btn'><Link to='https://github.com/joaquincataldo3/dictify' target='_blank'>GITHUB</Link></button>
-          </div>
-
-        </div>
-
 
       </div>
     </main>
