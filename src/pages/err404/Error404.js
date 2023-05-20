@@ -9,7 +9,7 @@ function Error404() {
 
   useEffect(() => {
     handleRenderComp()
-  }, [])
+  }, [handleRenderComp])
 
   return (
     <main className={`error404-main ${renderComp && 'error404-main-active'}`}>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import EnglishDesktopNavbar from './desktop-navbar/eng/DNavbar'
-import EnglishMobileNavbar from './mobile-navbar/eng/MNavbar'
+import DesktopNavbar from './desktop-navbar/DNavbar'
+import MobileNavbar from './mobile-navbar/MNavbar'
 import './Header.css'
 import logo from '../../assets/images/whitejclogo.png'
 
@@ -29,8 +29,8 @@ function Header() {
                     {isMobileNavbarOpen ? <i class='bx burger-icon bx-menu-alt-left' onClick={handleBurgerMenuClick}></i> : <i class='bx burger-icon bx-menu' onClick={handleBurgerMenuClick}></i>}
                 </div>
 
-                <EnglishDesktopNavbar />
-                <EnglishMobileNavbar isMobileNavbarOpen={isMobileNavbarOpen} setIsMobileNavbarOpen={setIsMobileNavbarOpen} />
+                <DesktopNavbar />
+                <MobileNavbar isMobileNavbarOpen={isMobileNavbarOpen} setIsMobileNavbarOpen={setIsMobileNavbarOpen} />
 
             </div>
         </header>

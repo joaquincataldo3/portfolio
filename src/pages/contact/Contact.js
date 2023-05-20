@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
-import ThankYou from './components/ThankYou'
+import ThankYou from '../../components/thank-you/ThankYou'
 import { useGlobalContext } from '../../hooks/context'
 import emailjs from '@emailjs/browser';
 import './Contact.css'
@@ -7,10 +7,11 @@ import './Contact.css'
 
 function Contact() {
 
-
-  const [email, setEmail] = useState('')
-  const [name, setName] = useState('')
-  const [message, setMessage] = useState('')
+  const [user, setUser] = useState({
+    email: '',
+    name: '',
+    message: ''
+  })
   const [isFormSubmitted, setIsFormSubmited] = useState(false)
   const nameInput = useRef(null)
   const emailInput = useRef(null)
@@ -20,7 +21,7 @@ function Contact() {
 
   useEffect(() => {
     handleRenderComp()
-  }, [])
+  }, [handleRenderComp])
 
   const sendEmail = (e) => {
     emailjs.sendForm('service_dzcqyzb', 'template_w0e151o', form.current, 'DpCplzOGb7H1ISpsa')
@@ -34,27 +35,24 @@ function Contact() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
-    console.log(email, name)
-    if (name && email && message) {
+    if (user.name && user.email && user.message) {
       setIsFormSubmited(true)
       sendEmail()
       const getFormBack = setTimeout(() => {
         setIsFormSubmited(false)
       }, 5000);
       return () => {
-        setName('')
-        setEmail('')
-        setMessage('')
+        setUser({name: '', email: '', message: ''})
         clearTimeout(getFormBack)
       }
     } else {
-      if (name === '') {
+      if (user.name === '') {
         nameInput.current.className = 'form-input input-error'
       }
-      if (email === '') {
+      if (user.email === '') {
         emailInput.current.className = 'form-input input-error'
       }
-      if (message === '') {
+      if (user.message === '') {
         messageInput.current.className = 'form-input input-error'
       }
     }
@@ -71,16 +69,16 @@ function Contact() {
             <input className='form-input'
               ref={nameInput}
               type="text" name="name" placeholder='Name'
-              onChange={(e) => setName(e.target.value)} value={name} />
+              onChange={(e) => setUser({name: e.target.value})} value={user.name} />
 
             <input className='form-input'
               ref={emailInput}
               type="text" name="email" placeholder='Email'
-              onChange={(e) => setEmail(e.target.value)} value={email} />
+              onChange={(e) => setUser({email: e.target.value})} value={user.email} />
 
             <textarea className='form-input' name='message'
               ref={messageInput}
-              placeholder='Your message' cols='50' rows='5' onChange={(e) => setMessage(e.target.value)} value={message}>
+              placeholder='Your message' cols='50' rows='5' onChange={(e) => setUser({message: e.target.value})} value={user.message}>
             </textarea>
            
               <button type='submit' className='contact-form-btn'>

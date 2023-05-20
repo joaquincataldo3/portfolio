@@ -92,15 +92,40 @@ body {
     color: #e982ad;
 }
 
+.icons-links-container {
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
 
-.bxl-github, .bxl-linkedin, .bx-file{
+.cv-container {
+    display: flex;
+}
+
+.cv-links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-links {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.cv-links:last-child {
+    margin-left: 15%;
+}
+
+
+.bxl-github, .bxl-linkedin, .bxs-file-pdf{
     color: #E9E8E8;
     font-size: 1.8rem;
-}
-
-.bxl-github, .bxl-linkedin {
+    cursor: pointer;
     margin-right: 1rem;
 }
+
 
 @media(min-width: 768px) {
     .home-main {
@@ -130,13 +155,23 @@ body {
         color: #E9E8E8;
     }
 
-    .bxl-github, .bxl-linkedin, .bx-file {
+    .cv-links {
         transition: transform 250ms;
     }
 
-    .bxl-github:hover, .bxl-linkedin:hover {
+    .cv-links:hover {
         transform: translateY(-5px);
     }
+
+    .bxl-github, .bxl-linkedin, .bxs-file-pdf {
+        transition: transform 250ms;
+    }
+
+    .bxl-github:hover, .bxl-linkedin:hover, .bxs-file-pdf:hover {
+        transform: translateY(-5px);
+    }
+
+
     
 }
 

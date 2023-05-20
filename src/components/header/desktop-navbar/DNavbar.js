@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useGlobalContext } from '../../../../hooks/context'
+import { useGlobalContext } from '../../../hooks/context'
 import './DNavbar.css'
 
 function DNavbar() {

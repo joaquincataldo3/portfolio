@@ -1,15 +1,18 @@
 import React, { useEffect } from 'react'
 import { useGlobalContext } from '../../hooks/context'
 import './Skills.css'
-import mySqlLogo from '../../assets/images/mysql.svg'
+import mySqlLogoSvg from '../../assets/images/mysql.svg'
+import sequelizeSvg from '../../assets/images/sequelize.svg'
+import mongooseNonIcon from '../../assets/images/white_circle.png'
+import typescriptSvg from '../../assets/images/typescript.svg'
 import javascriptSvg from '../../assets/images/javascriptsvg.svg'
-import mongoDbLogo from '../../assets/images/mongodblogo2.svg'
-import npmLogo from '../../assets/images/npm.svg'
-import gitLogo from '../../assets/images/git-logo.svg'
-import trelloLogo from '../../assets/images/trello-icon.svg'
-import nodeJS from '../../assets/images/nodejs-logo.svg'
-import photoshopLogo from '../../assets/images/photoshop-logo.svg'
-import postmanLogo from '../../assets/images/postmanlogo.svg'
+import mongoDbSvg from '../../assets/images/mongodblogo2.svg'
+import npmSvg from '../../assets/images/npm.svg'
+import gitSvg from '../../assets/images/git-logo.svg'
+import trelloSvg from '../../assets/images/trello-icon.svg'
+import nodeJSSvg from '../../assets/images/nodejs-logo.svg'
+import photoshopSvg from '../../assets/images/photoshop-logo.svg'
+import postmanSvg from '../../assets/images/postmanlogo.svg'
 
 function Skills() {
 
@@ -17,24 +20,28 @@ function Skills() {
 
   useEffect(() => {
     handleRenderComp()
-  }, [])
+  }, [handleRenderComp])
 
   const frontEndList = [
     {
-      name: 'HTML',
-      logo: 'bx bxl-html5',
+      name: 'React',
+      logo: 'bx bxl-react'
     },
     {
-      name: 'CSS',
-      logo: 'bx bxl-css3'
+      name: 'Typescript',
+      logo: 'bx bxl-typescript'
     },
     {
       name: 'Javascript',
       logo: 'bx bxl-javascript'
     },
     {
-      name: 'React',
-      logo: 'bx bxl-react'
+      name: 'CSS',
+      logo: 'bx bxl-css3'
+    }, 
+    {
+      name: 'HTML',
+      logo: 'bx bxl-html5',
     },
     {
       name: 'Bootstrap',
@@ -44,46 +51,60 @@ function Skills() {
 
   const backEndList = [
     {
+      name: 'Javascript',
+      logo: javascriptSvg
+    },
+    {
+      name: 'Typescript',
+      logo: typescriptSvg
+    },
+    {
+      name: 'Sequelize',
+      logo: sequelizeSvg
+    },
+    {
+      name: 'Mongoose',
+      logo: mongooseNonIcon
+    },
+    {
+      name: 'Node JS',
+      logo: nodeJSSvg,
+    }
+  ]
+
+  const dbList = [
+    {
       name: 'MySQL',
-      logo: mySqlLogo,
-      handler: 'Sequelize'
+      logo: mySqlLogoSvg,
     },
     {
       name: 'MongoDB',
-      logo: mongoDbLogo,
-      handler: 'Mongoose'
-
-    },
-    {
-      name: 'Javascript',
-      logo: javascriptSvg
+      logo: mongoDbSvg,
+  
     }
   ]
 
   const otherToolsList = [
-    {
-      name: 'Node JS',
-      logo: nodeJS,
-    },
+    
     {
       name: 'NPM',
-      logo: npmLogo,
+      logo: npmSvg,
     },
     {
       name: 'Git',
-      logo: gitLogo,
+      logo: gitSvg,
     },
     {
       name: 'Trello',
-      logo: trelloLogo
+      logo: trelloSvg
     },
     {
       name: 'Photoshop',
-      logo: photoshopLogo
+      logo: photoshopSvg
     },
     {
       name: 'Postman',
-      logo: postmanLogo
+      logo: postmanSvg
     },
   ]
 
@@ -122,13 +143,36 @@ function Skills() {
               if (i % 2 === 0) {
                 return (
                   <li className='skill backend-skill skill-even'>
-                    <img src={skill.logo} alt={skill.name} />
+                    <img src={skill.logo} alt={skill.name} className={`${skill.name === 'Typescript' && 'typescript-img'}`} />
                     <p className='skill-name'>{skill.name}</p>
                   </li>
                 )
               }
               return (
                 <li className='skill backend-skill skill-odd'>
+                  <img src={skill.logo} alt={skill.name} />
+                  <p className='skill-name'>{skill.name}</p>
+                </li>
+              )
+            })
+          }
+        </ul>
+      </div>
+      <div className='skills-list-container'>
+        <h3 className='skills-stack-title'>Databases</h3>
+        <ul type='none' className='skills'>
+          {
+            dbList.map((skill, i) => {
+              if (i % 2 === 0) {
+                return (
+                  <li className='skill db-list-skill skill-even'>
+                    <img src={skill.logo} alt={skill.name} className={`${skill.name === 'Typescript' && 'typescript-img'}`} />
+                    <p className='skill-name'>{skill.name}</p>
+                  </li>
+                )
+              }
+              return (
+                <li className='skill db-list-skill skill-odd'>
                   <img src={skill.logo} alt={skill.name} />
                   <p className='skill-name'>{skill.name}</p>
                 </li>

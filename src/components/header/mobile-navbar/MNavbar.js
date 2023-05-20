@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { useGlobalContext } from '../../../../hooks/context'
-import '../eng/MNavbar.css'
+import { useGlobalContext } from '../../../hooks/context'
+import './MNavbar.css'
 
 function MNavbar(props) {
 
@@ -33,14 +33,14 @@ function MNavbar(props) {
         className={({ isActive }) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
         onClick={(e) => handleNavbarLinkClick(e)}>
         <i className='bx bx-folder' ></i>
-        <span>Proyectos</span>
+        <span>Projects</span>
       </NavLink>
 
       <NavLink to='/professional-experience'
         className={({ isActive }) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
         onClick={(e) => handleNavbarLinkClick(e)}>
        <i className='bx bx-briefcase'></i>
-        <span>Profesional</span>
+        <span>Professional</span>
       </NavLink>
       
 
@@ -48,14 +48,14 @@ function MNavbar(props) {
         className={({ isActive }) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
         onClick={(e) => handleNavbarLinkClick(e)}>
         <i className='bx bx-wrench'></i>
-        <span>Habilidades</span>
+        <span>Skills</span>
       </NavLink>
 
       <NavLink to='/contact'
         className={({ isActive }) => isActive ? 'mobile-nav-link-active' : 'mobile-nav-link'}
         onClick={(e) => handleNavbarLinkClick(e)}>
         <i className='bx bx-user'></i>
-        <span>Contacto</span>
+        <span>Contact</span>
       </NavLink>
 
     </nav>

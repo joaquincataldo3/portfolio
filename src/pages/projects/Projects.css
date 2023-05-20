@@ -24,7 +24,6 @@
 
 .project-img img {
     height: 100%;
-    width: 100%;
     object-fit: contain;
     border-radius: 10px;
     border-bottom-left-radius: 0;
@@ -63,7 +62,8 @@
 .bxl-javascript,
 .bxl-css3,
 .bxl-react,
-.bxl-mongodb {
+.bxl-mongodb,
+.bxl-typescript {
     font-size: 1.5rem;
     color: #E9E8E8;
 }
@@ -81,7 +81,7 @@
 }
 
 .project-link-btn a {
-    color: #E9E8E8!important;
+    color: #E9E8E8 !important;
 }
 
 
@@ -137,18 +137,11 @@
     }
 
 
-    
-#quilmac-img {
-    width: 263.17px;
-}
 
-#coming-soon {
-    width: 263.17px;
-}
+    .adjust-project-img {
+        width: 263.17px;
+    }
 
-#dictify-img {
-    width: 263.17px;
-}
 
     .project-info {
         width: 90%;

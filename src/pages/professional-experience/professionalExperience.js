@@ -12,7 +12,7 @@ function Projects() {
 
   useEffect(() => {
     handleRenderComp()
-  }, [])
+  }, [handleRenderComp])
 
 
   return (
@@ -23,11 +23,11 @@ function Projects() {
 
         <div className='project-container'>
           <div className='project-img'>
-            <img src={quilmacProjectImg} alt="Quilmac e-commerce" id='quilmac-img' />
+            <img src={quilmacProjectImg} alt="Quilmac e-commerce" className='adjust-project-img'/>
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Quilmac e-commerce</h3>
-            <p className='project-description'>Currently developing/designing project for a phone repair and seller startup. HTML -EJS template based-, and Pure CSS/Javascript for the front
+            <p className='project-description'>Developed/designed project for a phone repair and seller startup. HTML -EJS template based-, and Pure CSS/Javascript for the front
               and MySQL with Sequelize and Javascript to create a CRUD of products and users with its respective validations/relations. Still working on an features/pages.
             </p>
 
@@ -46,7 +46,7 @@ function Projects() {
 
         <div className='project-container'>
           <div className='project-img'>
-            <img src={alterEgoProjectImg} alt="Alter ego e-commerce" id='coming-soon' />
+            <img src={alterEgoProjectImg} alt="Alter ego e-commerce" className='adjust-project-img' />
           </div>
           <div className='project-info'>
             <h3 className='project-title'>Alter ego e-commerce</h3>
