@@ -23,6 +23,28 @@ function Projects() {
       <div className='projects-wrapper'>
 
 
+
+        <div className='project-container'>
+          <div className='project-img'>
+            <img src={comingSoon} alt="Movies API project" className='adjust-project-img' />
+          </div>
+          <div className='project-info'>
+            <h3 className='project-title'>Twittardo Client</h3>
+            <p className='project-description'>
+              React + VITE + Typescript app. App similar to Twitter. It consumes the API I created for this project
+            </p>
+
+            <div className='skills-used'>
+              <i class='bx bxl-react'></i>
+              <i class='bx bxl-typescript'></i>
+            </div>
+            <div className='project-links-container'>
+              <button className='project-link-btn'><Link target='_black' to='#'>DEPLOY SOON</Link></button>
+              <button className='project-link-btn'><Link target='_black' to='https://github.com/joaquincataldo3/twittardo-client'>GITHUB</Link></button>
+            </div>
+          </div>
+        </div>
+
         <div className='project-container'>
           <div className='project-img'>
             <img src={dictifyImg} alt="Dictify project" className='adjust-project-img' />
@@ -44,26 +66,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className='project-container'>
-          <div className='project-img'>
-            <img src={comingSoon} alt="Movies API project" className='adjust-project-img' />
-          </div>
-          <div className='project-info'>
-            <h3 className='project-title'>Twittardo Client</h3>
-            <p className='project-description'>
-              React + VITE + Typescript app. Similar to Twitter. It consumes the API I created for this project
-            </p>
-
-            <div className='skills-used'>
-              <i class='bx bxl-react'></i>
-              <i class='bx bxl-typescript'></i>
-            </div>
-            <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_black' to='#'>DEPLOY SOON</Link></button>
-              <button className='project-link-btn'><Link target='_black' to='https://github.com/joaquincataldo3/twittardo-client'>GITHUB</Link></button>
-            </div>
-          </div>
-        </div>
+        
 
         <div className='project-container'>
           <div className='project-img'>
