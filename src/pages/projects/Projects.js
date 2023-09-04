@@ -47,6 +47,28 @@ function Projects() {
 
         <div className='project-container'>
           <div className='project-img'>
+            <img src={moviesApiImg} alt="Movies API project" className='adjust-project-img' />
+          </div>
+          <div className='project-info'>
+            <h3 className='project-title'>Twittardo API</h3>
+            <p className='project-description'>
+              Typescript API that I'll use to build a project called Twittardo. This will be a project similar to Twitter. I created the functionality to create twitts -that's my way to call it-,
+              comment a twitt, follow someone, etcetera. AWS was used to upload images. Also, it features admin and user login functionality.
+            </p>
+
+            <div className='skills-used'>
+              <i class='bx bxl-typescript'></i>
+              <i class='bx bxl-aws'></i>
+            </div>
+            <div className='project-links-container'>
+              <button className='project-link-btn'><Link target='_black' to='#'>DEPLOY SOON</Link></button>
+              <button className='project-link-btn'><Link target='_black' to='https://github.com/joaquincataldo3/twittardo-api'>GITHUB</Link></button>
+            </div>
+          </div>
+        </div>
+
+        <div className='project-container'>
+          <div className='project-img'>
             <img src={dictifyImg} alt="Dictify project" className='adjust-project-img' />
           </div>
           <div className='project-info'>
@@ -68,26 +90,7 @@ function Projects() {
 
         
 
-        <div className='project-container'>
-          <div className='project-img'>
-            <img src={moviesApiImg} alt="Movies API project" className='adjust-project-img' />
-          </div>
-          <div className='project-info'>
-            <h3 className='project-title'>Twittardo API</h3>
-            <p className='project-description'>
-              Typescript API that I'll use to build a project called Twittardo. This will be a project similar to Twitter. I created the functionality to create twitts -that's my way to call it-,
-              comment a twitt, follow someone, etcetera. Also, it features admin and user login functionality.
-            </p>
-
-            <div className='skills-used'>
-              <i class='bx bxl-typescript'></i>
-            </div>
-            <div className='project-links-container'>
-              <button className='project-link-btn'><Link target='_black' to='#'>DEPLOY SOON</Link></button>
-              <button className='project-link-btn'><Link target='_black' to='https://github.com/joaquincataldo3/twittardo-api'>GITHUB</Link></button>
-            </div>
-          </div>
-        </div>
+      
 
         <div className='project-container'>
           <div className='project-img'>

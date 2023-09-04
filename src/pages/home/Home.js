@@ -54,13 +54,13 @@ function Home() {
               isCvModalOpen ?
                 <div className='cv-esp-eng cv-container'>
                   <div className='cv-links'>
-                    <Link to='https://pdfhost.io/v/Jh5d3MH4K_JOAQUIN_CATALDO_ESP' target="_blank" className='home-links-container cv-links' onClick={handleShowCv}>
+                    <Link to='https://pdfhost.io/v/0U.hNgJZZ_JOAQUIN_CATALDO_ESP' target="_blank" className='home-links-container cv-links' onClick={handleShowCv}>
                       Esp
                     </Link>
                   </div>
 
                   <div className='cv-links'>
-                    <Link to='https://pdfhost.io/v/5Gp46bq45_JOAQUIN_CATALDO_ENG' target="_blank" className='home-links-container cv-links' onClick={handleShowCv}>
+                    <Link to='https://pdfhost.io/v/lCmMKpBME_JOAQUIN_CATALDO_ENG' target="_blank" className='home-links-container cv-links' onClick={handleShowCv}>
                       Eng
                     </Link>
                   </div>

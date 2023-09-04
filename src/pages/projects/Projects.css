@@ -63,7 +63,8 @@
 .bxl-css3,
 .bxl-react,
 .bxl-mongodb,
-.bxl-typescript {
+.bxl-typescript,
+.bxl-aws {
     font-size: 1.5rem;
     color: #E9E8E8;
 }
