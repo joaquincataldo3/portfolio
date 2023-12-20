@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { useGlobalContext } from '../../hooks/context'
-import './Skills.css'
 import mySqlLogoSvg from '../../assets/images/mysql.svg'
 import sequelizeSvg from '../../assets/images/sequelize.svg'
 import mongooseNonIcon from '../../assets/images/white_circle.png'
@@ -13,6 +12,9 @@ import trelloSvg from '../../assets/images/trello-icon.svg'
 import nodeJSSvg from '../../assets/images/nodejs-logo.svg'
 import photoshopSvg from '../../assets/images/photoshop-logo.svg'
 import postmanSvg from '../../assets/images/postmanlogo.svg'
+import nestJsLogo from '../../assets/images/nestjs-icon.svg'
+import postgreSql from '../../assets/images/postgresqlsv.svg'
+import './Skills.css'
 
 function Skills() {
 
@@ -51,12 +53,20 @@ function Skills() {
 
   const backEndList = [
     {
-      name: 'Javascript',
-      logo: javascriptSvg
+      name: 'NestJS',
+      logo: nestJsLogo
     },
     {
       name: 'Typescript',
       logo: typescriptSvg
+    },
+    {
+      name: 'Node JS',
+      logo: nodeJSSvg,
+    },
+    {
+      name: 'Javascript',
+      logo: javascriptSvg
     },
     {
       name: 'Sequelize',
@@ -65,14 +75,14 @@ function Skills() {
     {
       name: 'Mongoose',
       logo: mongooseNonIcon
-    },
-    {
-      name: 'Node JS',
-      logo: nodeJSSvg,
     }
   ]
 
   const dbList = [
+    {
+      name: 'PostgreSQL',
+      logo: postgreSql
+    },
     {
       name: 'MySQL',
       logo: mySqlLogoSvg,
@@ -119,14 +129,14 @@ function Skills() {
             frontEndList.map((skill, i) => {
               if (i % 2 === 0) {
                 return (
-                  <li className='skill frontend-skill skill-even'>
+                  <li key={i} className='skill frontend-skill skill-even'>
                     <i className={skill.logo}></i>
                     <p className='skill-name'>{skill.name}</p>
                   </li>
                 )
               }
               return (
-                <li className='skill frontend-skill skill-odd'>
+                <li key={i} className='skill frontend-skill skill-odd'>
                   <i className={skill.logo}></i>
                   <p className='skill-name'>{skill.name}</p>
                 </li>
@@ -142,14 +152,14 @@ function Skills() {
             backEndList.map((skill, i) => {
               if (i % 2 === 0) {
                 return (
-                  <li className='skill backend-skill skill-even'>
+                  <li key={i}  className='skill backend-skill skill-even'>
                     <img src={skill.logo} alt={skill.name} className={`${skill.name === 'Typescript' && 'typescript-img'}`} />
                     <p className='skill-name'>{skill.name}</p>
                   </li>
                 )
               }
               return (
-                <li className='skill backend-skill skill-odd'>
+                <li key={i}  className='skill backend-skill skill-odd'>
                   <img src={skill.logo} alt={skill.name} />
                   <p className='skill-name'>{skill.name}</p>
                 </li>
@@ -165,14 +175,14 @@ function Skills() {
             dbList.map((skill, i) => {
               if (i % 2 === 0) {
                 return (
-                  <li className='skill db-list-skill skill-even'>
+                  <li key={i}  className='skill db-list-skill skill-even'>
                     <img src={skill.logo} alt={skill.name} className={`${skill.name === 'Typescript' && 'typescript-img'}`} />
                     <p className='skill-name'>{skill.name}</p>
                   </li>
                 )
               }
               return (
-                <li className='skill db-list-skill skill-odd'>
+                <li key={i}  className='skill db-list-skill skill-odd'>
                   <img src={skill.logo} alt={skill.name} />
                   <p className='skill-name'>{skill.name}</p>
                 </li>
@@ -188,14 +198,14 @@ function Skills() {
             otherToolsList.map((skill, i) => {
               if (i % 2 === 0) {
                 return (
-                  <li className='skill other-skill skill-even'>
+                  <li key={i}  className='skill other-skill skill-even'>
                     <img src={skill.logo} alt={skill.name} />
                     <p className='skill-name'>{skill.name} {skill.handler && `+ ${skill.handler}`}</p>
                   </li>
                 )
               }
               return (
-                <li className='skill other-skill skill-odd'>
+                <li  key={i} className='skill other-skill skill-odd'>
                   <img src={skill.logo} alt={skill.name} />
                   <p className='skill-name'>{skill.name}</p>
                 </li>
