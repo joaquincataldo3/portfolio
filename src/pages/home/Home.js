@@ -39,7 +39,7 @@ function Home() {
         </p>
         <p>I'm currently looking for my first opportunity in the tech industry.
           Meanwhile, I keep <span className='highlighted-w'>learning</span> new things every day and <span className='highlighted-w'>building</span> projects.
-          You check out all my <span className='highlighted-w'>skills</span> and <span className='highlighted-w'>projects</span> in this portfolio.
+          You can check out all my <span className='highlighted-w'>skills</span> and <span className='highlighted-w'>projects</span> in this portfolio.
         </p>
         <p>I'm excited to share my <span className='highlighted-w'>knowledge</span> with you and I look forward to the opportunity to <span className='highlighted-w'>work</span> together.</p>
         <div className='icons-links-container'>
